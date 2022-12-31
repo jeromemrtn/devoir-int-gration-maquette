@@ -1,0 +1,245 @@
+@value sm from "./breakpoints.css";
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 50px 1fr;
+    align-items: center;
+}
+
+.logoSection {
+    grid-column-start: 1;
+}
+
+.logo {
+    margin: 0px;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.navLinks {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    padding: 0px 20px;
+}
+
+.navLinks > a {
+    margin-left: 10px;
+}
+
+.navButton {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.navButton > button {
+    margin-left: 10px;
+}
+
+
+.menuButton {
+    height: 30px;
+    width: 30px;
+    display: none;
+    grid-column-start: 9;
+    grid-column-end: 10;
+}
+
+.menuButton > div {
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#menu {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: -100%;
+    z-index: 99;
+    transition: 0.4s ease;
+}
+
+#menu > section {
+    padding: 0px 20px;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+/* style barre-nav*/
+.search-bar{
+    background-color: #75BF7A;
+    display: flex;
+justify-content: center;
+padding: 35px;
+border-radius: 20px;
+}
+
+#site-search{
+    margin: 15px;
+}
+
+
+@media screen and (max-width :870px) {
+    .navLinks{
+        display: none;
+    }
+    .navButton{
+        display: none;
+    }
+    .menuButton {
+        display: block;
+    }
+}
+
+/*style section 1*/
+
+.first-section .first-section-gauche {
+    float:left;
+    width:60%;
+}
+.first-section .first-section-droite {
+    margin-left:60%   
+}
+
+.img-first-section{
+    width: auto;
+}
+
+/*style section mobile */
+
+.section-mobile-1{
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-section{
+    display: flex;
+    justify-content: center;
+}
+
+.img-mobile-middle{
+    width: 150px;
+    margin: 20px;
+
+}
+
+
+
+img{
+    width: 150px;
+}
+
+
+
+/*style section card */
+
+.benefits-section{
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+}
+.card-1, .card-2, .card-3{
+    width: 750px;
+    margin: 20px;
+    padding: 20px;
+background: white;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+
+}
+
+.number-card{
+    color: #75BF7A;
+}
+
+.cp{
+    color: #75BF7A;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+
+/*style général */
+
+h1, h2, h3{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+footer{
+    display: flex;
+justify-content: space-around;
+margin-top: 15px;
+}
+
+
+/*responsive*/ 
+
+@media (max-width: 768px) {
+   footer{
+    display: block;
+   }
+   .logo-footer{
+    display: flex;
+    justify-content: center;
+   }
+
+   .info-footer-1{
+    display: block;
+    text-align: center;
+   }
+   .info-footer-2{
+    display: block;
+text-align: center;
+   }
+
+   .btn-footer-1{
+    display: flex;
+    justify-content: center;
+   }
+
+   .mobile-section{
+    display: block;
+    text-align: center;
+   }
+
+   .section-mobile-1{
+    display: block;
+    text-align: center;
+   }
+
+   .first-section .first-section-gauche {
+    float: none;
+    width: auto;
+  }
+
+  .first-section .first-section-droite {
+    margin-left: 0;
+  }
+
+  .img-first-section{
+    width: auto;
+  }
+
+
+
+  }
